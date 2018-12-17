@@ -1,0 +1,12 @@
+name: WSTC_submission
+title: WSTC_submission
+username:
+account: blackbawks
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 607555
+bundleId: 1762084
+url: https://blackbawks.shinyapps.io/WSTC_submission/
+when: 1544742751.64027
+asMultiple: FALSE
+asStatic: FALSE
