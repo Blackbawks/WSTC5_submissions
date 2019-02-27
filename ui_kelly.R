@@ -106,20 +106,24 @@ shinyUI(fluidPage(
                              tags$a(img(src='Blackbawks.png',height='90px'),href='http://www.blackbawks.net')
                       ),
                       column(2,style='margin-top:40px;',class='col-xs-12 col-sm-12 col-lg-2 col-md-12',
-                             HTML('<p style="vertical-align:bottom">site created by <a href="http://www.blackbawks.net">Black bawks data science</a></p>')
-                      ),
-                      #column(6,class='col-xs-12 col-sm-12 col-md-12 col-lg-6',
-                      #       column(12,h1(style='text-align:center','Sponsored by:')),
-                      #       column(6, class='col-lg-4 col-lg-offset-3',tags$a(img(src='PSGlogo.png',height='75px'),href='http://www.pacificseabirdgroup.org')),
-                      #       column(6, class='col-lg-4',tags$a(img(src='wsulogo3.png',height='75px'),href='http://www.seabirds.net'))
-                      #       ),
-                      
-                      column(2,class='col-xs-12 col-sm-12 col-md-12 col-lg-2',
-                          fluidRow(
+                      	fluidRow(
+				    column(12,HTML('<p style="vertical-align:bottom">site created by <a href="http://www.blackbawks.net">Black bawks data science</a></p>')),
                             column(12,HTML('<p>WebMaster: <a href="mailto:grwhumphries@blackbawks.net">Grant Humphries</a>')),
                             column(12,HTML('<p>General contact: <a href="mailto:wstc.seabirds@gmail.com">WSTC5 Information</a>'))
                           )
-                             )
+                      ),
+                      column(12,class='col-xs-12 col-sm-12 col-md-12 col-lg-6',
+                             column(12, h1(style='text-align:center','Sponsored by:')),
+                             column(6, class='col-lg-4 col-lg-offset-3',tags$a(img(src='TSGlogo.png',height='150px'),href='http://www.seabirdgroup.org.uk/')),
+                             column(6, class='col-lg-4',tags$a(img(src='BOU.jpg',height='150px'),href='https://www.bou.org.uk/'))
+					)
+                      
+                     # column(2,class='col-xs-12 col-sm-12 col-md-12 col-lg-2',
+                      #    fluidRow(
+                      #      column(12,HTML('<p>WebMaster: <a href="mailto:grwhumphries@blackbawks.net">Grant Humphries</a>')),
+                      #      column(12,HTML('<p>General contact: <a href="mailto:wstc.seabirds@gmail.com">WSTC5 Information</a>'))
+                       #   )
+                       #     )
              )
              
              
@@ -189,12 +193,12 @@ shinyUI(fluidPage(
              fluidRow(class='regrow3',
                       column(12,h1('Abstract Information')),
                       column(12,textInput("title","Title:")),
-                      column(12,textAreaInput("abstract","Abstract:",placeholder='250 words max please')),
+                      column(12,textAreaInput("abstract","Abstract:",placeholder='150 words max please')),
                       column(12,selectInput("session","Which session would you like to be in?:",
                                             c('Behaviour', 'Climate Change','Conservation Biology',
                                               'Contaminants and Marine Debris','Fisheries','Foraging Ecology',
                                               'Genetics','Management, Policy and Planning',
-                                              'Physiology','Population Biology','Tools and Techniques','Tracking and Distribution'))),
+                                              'Physiology','Population Biology','Tools and Techniques','Tracking and Distribution','Other'))),
                       
                       
                       column(12,h2('Please enter up to FOUR keywords (hashtags) that describe your work (minimum ONE keyword); e.g. "#TeamAuk"')),
@@ -221,20 +225,23 @@ shinyUI(fluidPage(
                              tags$a(img(src='Blackbawks.png',height='90px'),href='http://www.blackbawks.net')
                       ),
                       column(2,style='margin-top:40px;',class='col-xs-12 col-sm-12 col-lg-2 col-md-12',
-                             HTML('<p style="vertical-align:bottom">site created by <a href="http://www.blackbawks.net">Black bawks data science</a></p>')
+                      	fluidRow(
+				    column(12,HTML('<p style="vertical-align:bottom">site created by <a href="http://www.blackbawks.net">Black bawks data science</a></p>')),
+                            column(12,HTML('<p>WebMaster: <a href="mailto:grwhumphries@blackbawks.net">Grant Humphries</a>')),
+                            column(12,HTML('<p>General contact: <a href="mailto:wstc.seabirds@gmail.com">WSTC5 Information</a>'))
+                          )
                       ),
-                      #column(6,class='col-xs-12 col-sm-12 col-md-12 col-lg-6',
-                      #       column(12,h1(style='text-align:center','Sponsored by:')),
-                      #       column(6, class='col-lg-4 col-lg-offset-3',tags$a(img(src='PSGlogo.png',height='75px'),href='http://www.pacificseabirdgroup.org')),
-                      #       column(6, class='col-lg-4',tags$a(img(src='wsulogo3.png',height='75px'),href='http://www.seabirds.net'))
-                      #),
-                      
-                      column(2,class='col-xs-12 col-sm-12 col-md-12 col-lg-2',
-                             fluidRow(
-                               column(12,HTML('<p>WebMaster: <a href="mailto:grwhumphries@blackbawks.net">Grant Humphries</a>')),
-                               column(12,HTML('<p>General contact: <a href="mailto:wstc.seabirds@gmail.com">WSTC5 Information</a>'))
+                      column(12,class='col-xs-12 col-sm-12 col-md-12 col-lg-6',
+                             column(12, h1(style='text-align:center','Sponsored by:')),
+                             column(6, class='col-lg-4 col-lg-offset-3',tags$a(img(src='TSGlogo.png',height='150px'),href='http://www.seabirdgroup.org.uk/'))
                              )
-                      )
+                      
+                      #column(2,class='col-xs-12 col-sm-12 col-md-12 col-lg-2',
+                      #       fluidRow(
+                      #         column(2,HTML('<p>WebMaster: <a href="mailto:grwhumphries@blackbawks.net">Grant Humphries</a>')),
+                      #         column(2,HTML('<p>General contact: <a href="mailto:wstc.seabirds@gmail.com">WSTC5 Information</a>'))
+                      #       )
+                      #)
              )
              
     ),
@@ -309,8 +316,8 @@ shinyUI(fluidPage(
 
                         Once you have set up an account it is a good idea to follow some of the larger seabird groups,
                         which will help you make sure that you get content that you are interested in. 
-                       (Suggestions: @Seabirders @PacificSeabirds @TheSeabirdGroup @LAseabirdgroup 
-                        @AUS_NZ_Seabirds @Seabird_SOS). From here you can then find and follow other accounts 
+                       (Suggestions: @Seabirders @PacificSeabirds @TheSeabirdGroup
+                        @AUS_NZ_Seabirds.) From here you can then find and follow other accounts 
                         you are interested in.<br/><br/>
                         
                         It is a good idea to make sure that your profile shows who you are and what you do. 
@@ -457,7 +464,7 @@ The tweet below from Mark Miller from #WSTC4 is a good example of how this can b
                 
                 h3("Again, ideally you should be present during the presentation to make sure it all works out 
 OK and you are available to answer any questions. However, if it turns out that this is not possible, you can schedule your tweets in advance. Scheduling can be done using services 
-such as TweetDeck, Hootsuite, or Buffer. We suggest that if you do need to schedule your tweets in advance, you practice using a similar type of content (images, GIFs, videos) to make sure that it works before the conference comes around. 
+such as TweetDeck, Hootsuite, or Buffer. We suggest that if you do need to schedule your tweets in advance, you practise using a similar type of content (images, GIFs, videos) to make sure that it works before the conference comes around. 
 It is also important that you make sure your account is public and tweets are not protected so they are visible to everyone. Extra-check this before the conference! 
                    "),
                 

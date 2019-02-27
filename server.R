@@ -66,8 +66,8 @@ EmailCheck <- function(em){
 
 ### Checks the length of the Abstract
 AbstractCheck <- function(ab){
-  if(length(strsplit(ab,' ')[[1]]) > 250){
-    return('<p class="error">Error: your <strong>Abstract</strong> must be less than 250 words')
+  if(length(strsplit(ab,' ')[[1]]) > 150){
+    return('<p class="error">Error: your <strong>Abstract</strong> must be less than 150 words')
   }else{return('')}
   return()
 }

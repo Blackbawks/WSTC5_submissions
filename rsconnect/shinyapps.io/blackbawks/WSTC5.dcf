@@ -1,0 +1,12 @@
+name: WSTC5
+title: WSTC5
+username:
+account: blackbawks
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 633044
+bundleId: 1871193
+url: https://blackbawks.shinyapps.io/WSTC5/
+when: 1549964897.74071
+asMultiple: FALSE
+asStatic: FALSE
